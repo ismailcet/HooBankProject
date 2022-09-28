@@ -19,12 +19,13 @@ li {
 .App {
   padding: 1.875rem 8.463125rem;
 }
+/* Header Components */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.menu-img {
+.hide-right-side {
   display: none;
 }
 .nav-items {
@@ -39,4 +40,46 @@ li {
 }
 .nav-item:hover {
   color: #fff;
+}
+.drop-down {
+  display: none;
+}
+
+/* Hero Components */
+@media only screen and (max-width: 748px) {
+  body {
+    font-size: 14px;
+  }
+  .App {
+    padding: 1.25rem 1.5rem;
+  }
+  .nav-logo {
+    width: 9.375rem;
+  }
+  .menu-btn {
+    cursor: pointer;
+  }
+  .hide-right-side {
+    display: block;
+  }
+  .right-side {
+    display: none;
+  }
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .drop-down {
+    display: block;
+    overflow: hidden;
+    height: 8rem;
+    -webkit-transition: height 0.3s ease;
+    transition: height 0.8s ease;
+  }
+
+  .close-items {
+    height: 0px;
+  }
 }
