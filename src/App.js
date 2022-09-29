@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Stats from "./components/Stats";
 import Business from "./components/Business";
 import Billing from "./components/Billing";
 import CardDetail from "./components/CardDetail";
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <Stats />
       <Business />
       <Billing />
       <CardDetail />

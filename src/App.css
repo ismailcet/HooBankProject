@@ -9,7 +9,6 @@
 body {
   background-color: #00040f;
   font-size: 16px;
-  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -90,7 +89,6 @@ li {
   margin-bottom: 2.5rem;
 }
 .blue {
-  word-wrap: break-word;
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
     #def9fa 0.89%,
@@ -150,6 +148,40 @@ li {
   position: relative;
   left: 0;
   transform: translateX(8.375rem);
+}
+/* Stats Component */
+.stats {
+  margin-top: 2rem;
+  padding: 0 1.136875rem;
+  display: flex;
+  justify-content: space-around;
+}
+.stats-item {
+  display: flex;
+  align-items: center;
+  gap: 1.625rem;
+}
+.stats-number {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.stats-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 @media only screen and (max-width: 748px) {
   body {
