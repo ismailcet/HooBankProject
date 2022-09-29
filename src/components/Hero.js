@@ -14,7 +14,9 @@ const Hero = () => {
         </div>
         <div className="hero-info">
           <h1 className="hero-title">
-            The Next <span className="blue">Generation</span>Payment Method.
+            <span>The Next </span>
+            <span className="blue">Generation</span> <br />
+            <span>Payment Method.</span>
           </h1>
           <p className="hero-text">
             Our team of experts uses a methodology to identify the credit cards

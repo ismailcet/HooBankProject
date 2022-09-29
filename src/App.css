@@ -81,6 +81,9 @@ li {
   height: 2rem;
   margin-right: 0.25rem;
 }
+.hero-info {
+  position: relative;
+}
 .hero-title {
   font-size: 4.5rem;
   line-height: 1.5;
@@ -108,10 +111,40 @@ li {
   width: 25rem;
   font-weight: 300;
 }
+.hero-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+  top: 8%;
+  left: 70%;
+  border-radius: 50%;
+  width: 8.75rem;
+  height: 8.75rem;
+  border: 1px solid;
+  font-size: 1.125rem;
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.hero-up {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .hero-right {
   width: 50%;
 }
-
 .hero-img {
   width: 100%;
   position: relative;
@@ -150,8 +183,42 @@ li {
     -webkit-transition: height 0.3s ease;
     transition: height 0.8s ease;
   }
-
   .close-items {
     height: 0px;
+  }
+  /* Hero Component */
+  .hero {
+    flex-direction: column;
+  }
+  .hero-left {
+    width: auto;
+    margin-bottom: 1.5rem;
+  }
+  .discount {
+    width: 20.5rem;
+  }
+  .discount-text {
+    font-size: 0.875rem;
+  }
+  .hero-title {
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  .hero-text {
+    font-size: 0.875rem;
+    width: 20rem;
+  }
+  .hero-btn {
+    width: 6.75rem;
+    height: 6.75rem;
+    font-size: 0.875rem;
+  }
+  .hero-right {
+    width: auto;
+  }
+  .hero-img {
+    width: 100%;
+    transform: translateX(0px);
   }
 }
