@@ -12,18 +12,20 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Stats />
-      <Business />
-      <Billing />
-      <CardDetail />
-      <Testimonials />
-      <Clients />
-      <CTA />
+    <>
+      <div className="App">
+        <Navbar />
+        <Hero />
+        <Stats />
+        <Business />
+        <Billing />
+        <CardDetail />
+        <Testimonials />
+        <Clients />
+        <CTA />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

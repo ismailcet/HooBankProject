@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { features } from "../constans/index";
 import { send, shield, star } from "../assets/index";
 const Business = () => {
-  const [isClicked, setIsClicked] = useState();
   const addClicked = (e) => {
     const classLists = e.target.parentElement.parentElement.classList;
-    console.log(classLists);
+
     if (classLists.contains("features-item")) {
       classLists.contains("clicked")
         ? classLists.remove("clicked")
