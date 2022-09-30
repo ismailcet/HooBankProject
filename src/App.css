@@ -152,6 +152,7 @@ li {
 /* Stats Component */
 .stats {
   margin-top: 2rem;
+  margin-bottom: 11.25rem;
   padding: 0 1.136875rem;
   display: flex;
   justify-content: space-around;
@@ -183,9 +184,93 @@ li {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
+/* Business */
+.business {
+  display: flex;
+  gap: 4.875rem;
+  justify-content: space-between;
+}
+.business-left {
+  width: 50%;
+}
+.business-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  word-wrap: break-word;
+  margin-bottom: 1.5rem;
+}
+.business-info {
+  font-size: 1.125rem;
+  color: #b3b4b8;
+  margin-bottom: 5rem;
+}
+.business-btn {
+  cursor: pointer;
+  padding: 1.125rem 2.125rem;
+  font-size: 1.125rem;
+  color: #00040e;
+  font-weight: 600;
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  border-radius: 0.625rem;
+}
+.business-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.features-item {
+  padding: 1.5625rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 29.375rem;
+  cursor: pointer;
+  transition: all 0.7s linear;
+  border-radius: 1.5rem;
+}
+.features-left {
+  width: 10%;
+}
+.item-icon {
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #01131a;
+  border-radius: 50%;
+}
+.features-right {
+  width: 90%;
+  color: #ffffff;
+}
+.features-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.features-info {
+  font-size: 1rem;
+  color: #bdbcbf;
+}
+.clicked {
+  background-color: #292632;
+}
 @media only screen and (max-width: 748px) {
   body {
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
   }
   .App {
     padding: 1.25rem 1.5rem;
@@ -252,5 +337,13 @@ li {
   .hero-img {
     width: 100%;
     transform: translateX(0px);
+  }
+  /* Stats */
+  .stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .stats-item {
+    justify-content: space-between;
   }
 }
